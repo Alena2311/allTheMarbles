@@ -52,3 +52,9 @@ Task 2.
 4. As said above - to avoid changing both values by accident, when you need to change only one (a copy).
 5. The changed code is in the task2.mjs
 
+Task 3.
+1. I got 12 in first.
+2. I got 5 in second.
+3. Because inside the function there is a copy of the variable, so if you change it, you change only the copy and not the original.
+4. As both variables have the same name, so the one in the function kinda covering the variable outside.
+5. The rewritten code is in task3.mjs file.
