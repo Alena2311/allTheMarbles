@@ -31,8 +31,7 @@ function update() {
 
   counter++;
 
-  if (counter > switchLimits
-[currentState]) {
+  if (counter > switchLimits[currentState]) {
     currentState = nextState(currentState);
     counter = 0;
   }
