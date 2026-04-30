@@ -58,3 +58,9 @@ Task 3.
 3. Because inside the function there is a copy of the variable, so if you change it, you change only the copy and not the original.
 4. As both variables have the same name, so the one in the function kinda covering the variable outside.
 5. The rewritten code is in task3.mjs file.
+
+Task 4.
+1. Instead of repeating some parts of the code I grouped them into objects like "actions" or "switchLimits".
+2. I gave those groups of variables and functions clear understandable names.
+3. Made the structure of the whole code more visually understandable by separating colours, duration and change of state.
+4. Gave a clear number of how many times each colour should appear.
