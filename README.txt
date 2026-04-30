@@ -24,3 +24,31 @@ B. Changes:
     let newPoints = points + 10;
     return name + " now has " + newPoints;
 }
+
+C. Changes:
+    //change const to let as we are changing this variable further in the code
+let presentCount = 0;
+
+function registerAttendance(students) {
+    return students.map((student) => {
+        if (!student.status) {
+            //changed from defaultStatus to avoid all student objects having the same status, so one changing doesn't affect others
+            student.status = { present: false };
+        }
+
+        //changed = to === cause we need to check IF it's true and not just claim so
+        if ((student.status.present === true)) {
+            presentCount++;
+        }
+        
+        //added more statuses as students are not only present
+        return student.name + " is " + (student.status.present ? "present" : "absent");
+    });
+
+Task 2.
+1. I received 25 and 25 in the terminal.
+2. Because both refer to the same object.
+3. No, it's not copying, but refering to the object (so if you change one, eventually two will be changed).
+4. As said above - to avoid changing both values by accident, when you need to change only one (a copy).
+5. The changed code is in the task2.mjs
+
